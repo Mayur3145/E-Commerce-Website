@@ -4,10 +4,10 @@ self.addEventListener('install' , (event)=>{
     caches.open("static")
     .then((Cache)=>{
         Cache.addAll([
-           'https://github.com/Mayur3145/E-Commerce-Website/',
-           'https://github.com/Mayur3145/E-Commerce-Website/style.css',
-           'https://github.com/Mayur3145/E-Commerce-Website/cart.html',
-           'https://github.com/Mayur3145/E-Commerce-Website/index.html'
+           'https://mayur3145.github.io/E-Commerce-Website/',
+           'https://mayur3145.github.io/E-Commerce-Website/style.css',
+           'https://mayur3145.github.io/E-Commerce-Website/cart.html',
+           'https://mayur3145.github.io/E-Commerce-Website/index.html'
  
         ]).catch((error)=>{
             console.log(error)
