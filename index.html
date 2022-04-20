@@ -17,6 +17,17 @@
     />
   <link rel="apple-touch-icon" href="assets/logoicon-192x192.png">
   <link rel="manifest" href="./manifest.json" />
+   <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("https://mayur3145.github.io/E-Commerce-Website/serviceworker.js")
+          .then((registration) => {
+            console.log("service worker registered");
+          })
+          .catch((err) => {
+            console.log("sw registraration " + err);
+          });
+      }
+    </script>
   </head>
   <body>
     <div class="header">
